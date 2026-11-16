@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-editorial: #FAF7F2;
+    --bg-paper: #F4EFE6;
+    --text-primary: #1C1614;
+    --text-secondary: #5A514B;
+    --text-muted: #8A817A;
+    --gold: #BB8752;
+    --gold-light: #DFC096;
+    --gold-dark: #8C6033;
+    --card-border: rgba(28, 22, 20, 0.08);
+  }
+
+  body {
+    background-color: var(--bg-editorial);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom smooth scroll and scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #BB8752;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C6033;
+}
+
+/* Editorial subtle borders & shadows */
+.editorial-shadow {
+  box-shadow: 0 10px 30px -10px rgba(28, 22, 20, 0.08), 0 4px 6px -2px rgba(28, 22, 20, 0.03);
+}
+
+.book-shadow {
+  box-shadow: 0 15px 35px -5px rgba(28, 22, 20, 0.22), 0 5px 15px rgba(28, 22, 20, 0.08);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.book-shadow:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 45px -5px rgba(28, 22, 20, 0.3), 0 10px 20px rgba(187, 135, 82, 0.2);
+}
+
+/* Subtle texture overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(187, 135, 82, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}

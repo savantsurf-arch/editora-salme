@@ -13,10 +13,10 @@ export const INITIAL_BOOKS: Book[] = [
     language: 'Português',
     coverUrl: 'https://editora-salme.my.canva.site/_assets/media/346eec122f5d5e87b99a206f88c3eb5a.jpg',
     format: 'eBook Kindle / Kindle Unlimited',
-    asin: 'B0DCZ1Z42V',
+    asin: 'B0GF8TXTZ8',
     publicationYear: 2024,
     pages: 310,
-    buyUrl: 'https://a.co/d/fuSwt3e',
+    buyUrl: 'https://www.amazon.com.br/dp/B0GF8TXTZ8',
     status: 'available',
     isFeatured: true,
     tags: ['Romance Sáfico', 'Espelhos Quebrados', 'Releitura', 'Enemies to Lovers', 'Drama Emocional']
